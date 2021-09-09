@@ -1,0 +1,9 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.App-header {
+	background-color:rgba(128, 117, 201, 0.7);
+	text-shadow: 2px 2px 2px black;
+}

@@ -1,0 +1,16 @@
+.main_menu {
+	background-color:#282c34;
+	display : flex;
+	color: white;
+	list-style:none;
+	padding: 8px;
+}
+.main_menu li {
+	padding: 6px;
+	margin: 10px;
+}
+.main_menu li:hover {
+	background-color: #aaa;
+	color: black;
+	cursor:pointer;
+}

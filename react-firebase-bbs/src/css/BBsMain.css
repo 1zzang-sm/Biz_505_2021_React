@@ -1,0 +1,17 @@
+.bbs_list {
+	width: 90%;
+	margin: 20px auto;
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+.bbs_list tr:nth-child(odd) {
+	background-color: #ddd;
+}
+.bbs_list tr:nth-child(even) {
+	background-color: #eee;
+}
+.bbs_list th,
+.bbs_list td {
+	padding: 8px;
+	cursor:pointer;
+}
