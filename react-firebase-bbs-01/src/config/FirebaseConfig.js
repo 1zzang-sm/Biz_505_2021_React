@@ -1,5 +1,5 @@
 const firebaseConfig = {
-  apiKey: "YOUR FIREBASE API KEY",
+  apiKey: "YOUR FIREBASE API KEY--",
   authDomain: "hello-android-bfb69.firebaseapp.com",
   databaseURL: "https://hello-android-bfb69-default-rtdb.firebaseio.com",
   projectId: "hello-android-bfb69",
