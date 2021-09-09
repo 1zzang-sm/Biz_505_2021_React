@@ -10,11 +10,10 @@
 	padding: 6px;
 	margin: 10px;
 }
-.main_menu a:link {
-	color: white;
+.main_menu a {
 	text-decoration:none;
+	color:inherit;
+	margin-left:20px;
+	font-weight: bold;
 }
-.main_menu a:visited {
-	color: white;
-	text-decoration:none;
-}
+
