@@ -1,7 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/BBs.css'
+import { firestore } from '../config/BBSConfig'
 
 function BBsMain() {
+	const [bbsBody, setBBsBody] = useState([])
+	const firebaseFetch = ()=>{
+		firestore.collection('bbs')
+		.get()
+		.then((bbsList) =>{
+			bbsList.forEach((bbs) =>{
+				const item = bbs.data()
+				setBBsBody([
+					...bbsBody,
+					<tr>
+						<td>{item.b_date}</td>
+						<td>{item.b_time}</td>
+						<td>{item.b_write}</td>
+						<td>{item.b_subject}</td>
+					</tr>
+				])
+			})
+		})
+		
+	}
+	// 최초로 한번 열릴때 firestore를 가져와서 데이터를 가져오는 명령 
+	useEffect(firebaseFetch, [])
+
 	return (
 		<table className="bbs_list">
 			<thead>
@@ -12,14 +36,7 @@ function BBsMain() {
 					<th>제목</th>
 				</tr>
 			</thead>
-			<tbody>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-			</tbody>
+			<tbody>{bbsBody}</tbody>
 		</table>
 	)
 }

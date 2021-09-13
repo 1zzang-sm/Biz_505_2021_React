@@ -1,0 +1,27 @@
+.main_container {
+	width: 100vw;
+}
+.input_text {
+	padding: 8px;
+}
+.input_text input {
+	width: 95vw;
+	height: 6vh;
+	font-size:20px;
+}
+.bucket_list {
+	width:95vw;
+	margin:20px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.bucket_list th,
+.bucket_list td {
+	padding:8px;
+}
+.bucket_list tr:nth-child(odd) {
+	background-color:#ddd;
+}
+.bucket_list tr:nth-child(even) {
+	background-color: #aaa;
+}

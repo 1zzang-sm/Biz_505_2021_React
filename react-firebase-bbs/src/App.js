@@ -1,9 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './comps/Header'
-import Navi from './comps/MainNav'
-import BBsMain from './comps/BBsMain'
-
+import {Header, MainNav, BBsMain, Write, BBsDetail} from './comps'
 import {BrowserRouter, Route} from 'react-router-dom'
 
 function App() {
@@ -11,8 +8,12 @@ function App() {
 <BrowserRouter>
     <div className="App">
       <Header />
-	  <Navi />
-	  <BBsMain />
+	  <MainNav />
+	  <Route path="/detail" component={BBsDetail} exact />
+	  <Route  path="/write" component={Write} exact/>
+	  <section>
+	  	<Route eaxct path="/" component={BBsMain} exact/>
+	  </section>
     </div>
 </BrowserRouter>
   );
