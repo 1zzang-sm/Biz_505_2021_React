@@ -1,12 +1,12 @@
 import './App.css';
 import {Header} from './comps/'
 import {Footer} from './comps/'
-import {MainBBs} from './comps'
+import {BucketMain} from './comps'
 function App() {
 	return (
 	<div className="App">
 		<Header />
-		<MainBBs />
+		<BucketMain />
 		<Footer />
 	</div>
 	);

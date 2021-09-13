@@ -24,4 +24,5 @@
 }
 .bucket_list tr:nth-child(even) {
 	background-color: #aaa;
+	
 }

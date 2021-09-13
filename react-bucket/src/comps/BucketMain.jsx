@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/MainBBs.css'
+import '../css/BucketMain.css'
 
 function MainBBs() {
 	return (
